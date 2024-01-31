@@ -1,9 +1,10 @@
 import { useState } from "react";
 import NavBar from "./components/NavBar";
-import AboutMe from "./components/AboutMe";
-import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
-import Resume from "./components/Resume";
+import Footer from "./components/Footer";
+import AboutMe from "./pages/AboutMe";
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
+import Resume from "./pages/Resume";
 
 import "./App.css";
 
@@ -27,6 +28,7 @@ function App() {
     <>
       <NavBar setPage={setPage} />
       {switchPage()}
+      <Footer />
     </>
   );
 }
