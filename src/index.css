@@ -230,6 +230,29 @@ footer {
   cursor: pointer;
 }
 
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 25px;
+  margin: 20px;
+}
+
+.project-card {
+  margin: 20px;
+  width: 280px;
+  height: 200px;
+  background-color: whitesmoke;
+  padding: 0px;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+
+.project-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
