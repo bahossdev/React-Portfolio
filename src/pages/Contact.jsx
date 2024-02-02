@@ -1,8 +1,6 @@
 import { useState } from "react";
-// import emailjs from "emailjs-com";
 
 function Contact() {
-  // const [content, setContent] = useState({name: '', email: '', message: ''});
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
