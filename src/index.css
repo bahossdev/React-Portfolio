@@ -4,7 +4,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  /* color: rgba(255, 255, 255, 0.87); */
   background-color: #61a1c3;
 
   /* font-synthesis: none;
@@ -62,13 +62,15 @@ header {
 
 ul {
   list-style: none !important;
-  ;
   padding: 0;
 }
 
 .nav li {
   margin-left: 20px;
 }
+
+.active a{
+  color: rgb(230, 170, 248);}
 
 h1 {
   font-size: 3.2em;
@@ -92,6 +94,10 @@ h2 {
   margin-top: 12px;
   color: #cbedff;
   text-shadow: 2px 2px 5px #0a1537;
+}
+
+h3 {
+  margin: 10px
 }
 
 .avatar {
@@ -163,6 +169,23 @@ button:hover {
   box-shadow: 2px 2px 5px rgba(205, 155, 196, 0.814);
 }
 
+button:disabled {
+  background-color: rgb(103, 88, 108);
+  cursor: not-allowed;
+}
+
+.icon {
+  color: #72d8f5c1;
+  font-size: 40px;
+  margin: 5px;
+}
+
+.icon:hover {
+  cursor: pointer;
+  color: rgb(230, 170, 248);
+  filter: drop-shadow(2px 2px 5px rgba(205, 155, 196, 0.814));
+}
+
 .footer-box {
   display: block
 }
@@ -183,18 +206,6 @@ footer {
   box-shadow: 1px -3px 6px black;
 }
 
-.icon {
-  color: #72d8f5c1;
-  font-size: 40px;
-  margin: 5px;
-}
-
-.icon:hover {
-  cursor: pointer;
-  color: rgb(230, 170, 248);
-  filter: drop-shadow(2px 2px 5px rgba(205, 155, 196, 0.814));
-}
-
 .footer-icons {
   display: flex;
   justify-content: center;
@@ -202,25 +213,30 @@ footer {
 }
 
 .container {
-  position: relative;
   display: block;
+  position: relative;
   width: fit-content;
   margin: auto;
   padding: 60px;
 }
 
+.card li{
+  list-style:square;
+  margin-left: 30px;
+}
 .resume {
   display: block;
-  max-width: 100%;
   position: relative;
+  max-width: 100%;
   box-shadow: var(--box-shadow);
   border-radius: 12px 0;
+  filter: blur(2px);
 }
 
 .icon-cover {
   position: absolute;
-  top: 22%;
-  right: 10%;
+  top: 480px;
+  right: 80px;
   font-size: 2rem;
   z-index: 1;
 }
@@ -241,18 +257,37 @@ footer {
 .project-card {
   margin: 20px;
   width: 280px;
-  height: 200px;
-  background-color: whitesmoke;
-  padding: 0px;
+  height: 190px;
+  background-color: #1b427cd2;
+  padding: 5px;
   border-radius: 10px;
   box-shadow: var(--box-shadow);
 }
 
+.project-title {
+  color: #edf0f9f2;
+  text-align: center;
+}
+
+.project-icon {
+  color: #72d8f5c1;
+  font-size: 20px;
+}
+
+.project-icon:hover {
+  cursor: pointer;
+  color: rgb(230, 170, 248);
+  filter: drop-shadow(2px 2px 5px rgba(205, 155, 196, 0.814));
+}
+
 .project-image {
+  /* background-color:#213547;
+  background-blend-mode:soft-light; */
   max-width: 100%;
   height: auto;
   border-radius: 10px 10px 0 0;
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {

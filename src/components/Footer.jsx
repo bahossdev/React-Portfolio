@@ -1,5 +1,5 @@
 //importing the react-icon for the footer icons
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaCodepen } from "react-icons/fa";
 
 function Footer() {
   const handleClickIcon = (icon) => {
@@ -7,7 +7,9 @@ function Footer() {
     if (icon === "github") {
       window.open("https://github.com/bahossdev", "_blank");
     } else if (icon === "linkedin") {
-      window.open("https://www.linkedin.com/in/", "_blank");
+      window.open("https://www.linkedin.com/", "_blank");
+    } else if (icon === "codepen") {
+      window.open("https://codepen.io/bahossdev", "_blank");
     }
   };
 
@@ -21,6 +23,10 @@ function Footer() {
           />
           <FaLinkedin
             onClick={() => handleClickIcon("linkedin")}
+            className="icon"
+          />
+          <FaCodepen
+            onClick={() => handleClickIcon("codepen")}
             className="icon"
           />
         </div>
