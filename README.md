@@ -76,3 +76,5 @@ The application is deployed on Render. You can access it [here](https://main--ae
 If you have any questions or need further assistance, feel free to reach out to me by [email](mailto:bahoss.dev@gmail.com).
 
 ## Screenshots
+![screenshot](https://github.com/bahossdev/React-Portfolio/assets/148646212/866533c2-8115-45f6-a639-e177516f6bec)
+![screenshot2](https://github.com/bahossdev/React-Portfolio/assets/148646212/01bf0494-99bf-4b04-abb0-935102f11b49)
