@@ -21,7 +21,7 @@ header {
   position: fixed;
   top: 0;
   margin: auto;
-  background-image: url('./Header.jpg');
+  background-image: url('../Header.jpg');
   background-color: #0f4371ba;
   height: 170px;
   width: 100%;
