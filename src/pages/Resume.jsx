@@ -10,7 +10,7 @@ function Resume() {
         <h2>Resume</h2>
         <div>
           <ul className="card">
-          <p><strong>Proficiency in:</strong></p>
+            <p><strong>Proficiency in:</strong></p>
             <li>HTML</li>
             <li>CSS</li>
             <li>Tailwind</li>
@@ -21,7 +21,9 @@ function Resume() {
             <li>MongoDB</li>
             <li>MySQL</li>
           </ul>
+          {/* Resume image */}
           <img src={resumePic} alt="resume" className="resume" />
+          {/* Download link and icon*/}
           <a href={resume} download className="icon-cover">
             <FaDownload />
           </a>

@@ -1,6 +1,7 @@
-import Project from "../components/Project"
+import Project from "../components/Project";
 
 function Portfolio() {
+  // Array of project data
   const projects = [
     {
       name: "Min-Go Dating App",
@@ -42,12 +43,14 @@ function Portfolio() {
 
   return (
     <>
-      {/* Map through project data and render a card for each project */}
+      {/* Portfolio section */}
       <div>
         <h2>Portfolio</h2>
+        {/* Container for projects */}
         <div className="project-container">
+          {/* Map through project data and render a card for each project */}
           {projects.map((project, index) => (
-            <Project project={project} index={index}/>
+            <Project key={index} project={project} />
           ))}
         </div>
       </div>

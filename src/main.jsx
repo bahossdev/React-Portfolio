@@ -10,6 +10,7 @@ import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 
+{/* Use Router component to establish the routing context */}
 const router = createBrowserRouter([
   {
     path: '/',
@@ -35,6 +36,7 @@ const router = createBrowserRouter([
   },
 ]);
 
+// Render the application using ReactDOM.render()
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
 );

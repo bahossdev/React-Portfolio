@@ -1,40 +1,28 @@
 import { Link, useLocation } from 'react-router-dom';
 
 function NavBar() {
+  // Get the current page location
   const currentPage = useLocation().pathname;
-  console.log(currentPage);
+  console.log(currentPage); // Log the current page for debugging
+
   return (
-    <ul className="nav ">
+    <ul className="nav">
+      {/* Navigation links */}
       <li className={"nav-item " + (currentPage === '/' ? 'active' : '')}>
-        <Link
-          to="/"
-        >
-          About Me
-        </Link>
+        {/* Link to the home page */}
+        <Link to="/">About Me</Link>
       </li>
       <li className={"nav-item " + (currentPage === '/Portfolio' ? 'active' : '')}>
-        <Link
-          to="/Portfolio"
-          className={currentPage === '/Portfolio' ? ' active' : ''}
-        >
-          Portfolio
-        </Link>
+        {/* Link to the portfolio page */}
+        <Link to="/Portfolio">Portfolio</Link>
       </li>
       <li className={"nav-item " + (currentPage === '/Resume' ? 'active' : '')}>
-        <Link
-          to="/Resume"
-          className={currentPage === '/Resume' ? ' active' : ''}
-        >
-          Resume
-        </Link>
+        {/* Link to the resume page */}
+        <Link to="/Resume">Resume</Link>
       </li>
       <li className={"nav-item " + (currentPage === '/Contact' ? 'active' : '')}>
-        <Link
-          to="/Contact"
-          className={currentPage === '/Contact' ? ' active' : ''}
-        >
-          Contact
-        </Link>
+        {/* Link to the contact page */}
+        <Link to="/Contact">Contact</Link>
       </li>
     </ul>
   );

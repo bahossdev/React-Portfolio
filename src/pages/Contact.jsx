@@ -1,22 +1,27 @@
 import { useState } from "react";
 
 function Contact() {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
-  const [error, setError] = useState({ name: '', email: '', message: '' })
+  // State variables for name, email, message, error messages, and success message
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [error, setError] = useState({ name: '', email: '', message: '' });
   const [success, setSuccess] = useState('');
 
+  // Function to check for errors in input fields
   function checkForError(text, inputName) {
+    // Reset success message
     setSuccess('');
+    // Check if field is empty
     if (text.trim().length === 0) {
       setError({ ...error, [inputName]: `${inputName} field can't be empty` });
     } else {
-      console.log(inputName)
-      setError({ ...error, [inputName]: '' })
+      // Clear error if field is not empty
+      setError({ ...error, [inputName]: '' });
     }
-    if (inputName == "email") {
-      const regex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+    // Check for email format if input is email
+    if (inputName === "email") {
+      const regex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
       const isValidEmail = regex.test(email);
       if (!isValidEmail) {
         setError({ ...error, email: 'Please enter a valid email' });
@@ -25,10 +30,12 @@ function Contact() {
     }
   }
 
+  // Function to handle form submission
   function handleSubmit(event) {
     event.preventDefault();
 
-    setSuccess('Email sent successfully! 🙂')
+    // Display success message and reset input fields
+    setSuccess('Email sent successfully! 🙂');
     setName('');
     setEmail('');
     setMessage('');
@@ -37,7 +44,9 @@ function Contact() {
   return (
     <div>
       <h2>Contact Me</h2>
+      {/* Contact form */}
       <form className="contact-form" onSubmit={handleSubmit}>
+        {/* Name field */}
         <div className="form-group">
           <label htmlFor="name">Name:</label>
           <input
@@ -50,7 +59,9 @@ function Contact() {
             required
           />
         </div>
+        {/* Error message for name field */}
         <div className="error">{error.name}</div>
+        {/* Email field */}
         <div className="form-group">
           <label htmlFor="email">Email:</label>
           <input
@@ -63,7 +74,9 @@ function Contact() {
             required
           />
         </div>
+        {/* Error message for email field */}
         <div className="error">{error.email}</div>
+        {/* Message field */}
         <div className="form-group">
           <label htmlFor="message">Message:</label>
           <textarea
@@ -75,8 +88,12 @@ function Contact() {
             required
           ></textarea>
         </div>
+        {/* Error message for message field */}
         <div className="error">{error.message}</div>
-        <button type="submit" disabled={(error.name || error.email || error.message) || (!name.length || !email.length || !message.length) ? true : ''}>{success || 'Send Message'}</button>
+        {/* Submit button */}
+        <button type="submit" disabled={(error.name || error.email || error.message) || (!name.length || !email.length || !message.length)}>
+          {success || 'Send Message'}
+        </button>
       </form>
     </div>
   );
