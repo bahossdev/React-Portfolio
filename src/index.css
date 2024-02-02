@@ -58,8 +58,9 @@ ul {
   margin-left: 20px;
 }
 
-.active a{
-  color: rgb(230, 170, 248);}
+.active a {
+  color: rgb(230, 170, 248);
+}
 
 h1 {
   font-size: 3.2em;
@@ -122,17 +123,22 @@ h3 {
   box-shadow: var(--box-shadow);
 }
 
-.form-group {
-  margin-bottom: 20px;
-}
-
 label {
   display: block;
-  margin-bottom: 5px;
+  font-weight: 800;
+  margin-top: 20px;
+}
+
+.error {
+font-style: italic;
+font-size: small;
+color:rgb(79, 78, 78);
+margin-bottom: 10px;
 }
 
 input,
 textarea {
+  color: black;
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -209,10 +215,11 @@ footer {
   padding: 60px;
 }
 
-.card li{
-  list-style:square;
+.card li {
+  list-style: square;
   margin-left: 30px;
 }
+
 .resume {
   display: block;
   position: relative;

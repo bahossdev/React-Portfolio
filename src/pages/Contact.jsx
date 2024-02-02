@@ -50,7 +50,7 @@ function Contact() {
             required
           />
         </div>
-        <div>{error.name}</div>
+        <div className="error">{error.name}</div>
         <div className="form-group">
           <label htmlFor="email">Email:</label>
           <input
@@ -63,7 +63,7 @@ function Contact() {
             required
           />
         </div>
-        <div>{error.email}</div>
+        <div className="error">{error.email}</div>
         <div className="form-group">
           <label htmlFor="message">Message:</label>
           <textarea
@@ -75,7 +75,7 @@ function Contact() {
             required
           ></textarea>
         </div>
-        <div>{error.message}</div>
+        <div className="error">{error.message}</div>
         <button type="submit" disabled={(error.name || error.email || error.message) || (!name.length || !email.length || !message.length) ? true : ''}>{success || 'Send Message'}</button>
       </form>
     </div>
