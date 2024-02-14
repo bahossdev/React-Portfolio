@@ -10,6 +10,12 @@
 
 }
 
+* {
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* Body Styles */
 body {
   margin: auto;
@@ -44,7 +50,7 @@ header {
   font-weight: 800;
   color: #b0cef3;
   text-decoration: inherit;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .nav a:hover {
@@ -85,8 +91,12 @@ h1:hover {
 }
 
 /* Subheading Styles */
+h1 {
+  font-size: 4rem;
+}
+
 h2 {
-  font-size: 2rem;
+  font-size: 2.7rem;
   line-height: 1.1;
   margin-left: 12px;
   margin-top: 12px;
@@ -96,7 +106,26 @@ h2 {
 
 /* Subsection Heading Styles */
 h3 {
-  margin: 10px
+  margin: 10px;
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+}
+
+h6 {
+  font-size: 1.7rem;
+}
+
+
+p {
+  font-size: 1.5rem;
+  margin-top: 0;
 }
 
 .avatar {
@@ -238,6 +267,7 @@ footer {
 .card li {
   list-style: square;
   margin-left: 30px;
+  font-size: 1.3rem;
 }
 
 .resume {
@@ -251,7 +281,7 @@ footer {
 
 .icon-cover {
   position: absolute;
-  top: 480px;
+  top: 570px;
   right: 80px;
   font-size: 2rem;
   z-index: 1;

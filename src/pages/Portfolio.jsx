@@ -10,6 +10,12 @@ function Portfolio() {
       photo: "./min-go.jpg",
     },
     {
+      name: "Plantasia",
+      deploy: "https://plantasia.onrender.com",
+      repo: "https://github.com/bahossdev/Plantasia.git",
+      photo: "./plantasia.png",
+    },
+    {
       name: "Fitness Dashboard",
       deploy: "https://bahossdev.github.io/Fitness-Dashboard/",
       repo: "https://github.com/bahossdev/Fitness-Dashboard",
@@ -32,12 +38,6 @@ function Portfolio() {
       deploy: "https://bahossdev.github.io/Coding-Quiz/",
       repo: "https://github.com/bahossdev/Coding-Quiz",
       photo: "./quiz.jpg",
-    },
-    {
-      name: "Employee Tracker",
-      deploy: "https://drive.google.com/file/d/15MjlNN6rCtvgHZAyQ13Qe0ZWAOha0BVL/view?usp=share_link",
-      repo: "https://github.com/bahossdev/Employee-Tracker.git",
-      photo: "./employee.jpg",
     },
   ];
 
