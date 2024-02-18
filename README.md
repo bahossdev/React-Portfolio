@@ -5,8 +5,6 @@
 [![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 
-A single page web application to present personal portfolio
-
 ## Description
 This is a single-page web application designed to serve as a portfolio for me as a web developer. It provides sections for presenting information about me, showcasing my projects, providing contact information, and offering a downloadable resume.
 
