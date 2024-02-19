@@ -43,12 +43,9 @@ function Portfolio() {
 
   return (
     <>
-      {/* Portfolio section */}
-      <div>
-        <h2>Portfolio</h2>
-        {/* Container for projects */}
+      <div className="container">
+        <h2 className="typewriter">Portfolio</h2>
         <div className="project-container">
-          {/* Map through project data and render a card for each project */}
           {projects.map((project, index) => (
             <Project key={index} project={project} />
           ))}

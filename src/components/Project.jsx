@@ -4,7 +4,7 @@ import { RiExternalLinkFill } from "react-icons/ri";
 function Project({ project, index }) {
 
   // Function to handle click on project deployment link
-  const handleWebIcon = (deployUrl) => {
+  const openPage = (deployUrl) => {
     window.open(deployUrl, "_blank");
   };
 
@@ -23,6 +23,7 @@ function Project({ project, index }) {
             src={project.photo}
             alt={project.name}
             className="project-image"
+            onClick={() => openPage(project.deploy)}
           />
         )}
         {/* Display project name */}
@@ -32,7 +33,7 @@ function Project({ project, index }) {
           {/* Icon for project deployment */}
           <RiExternalLinkFill
             className="project-icon"
-            onClick={() => handleWebIcon(project.deploy)} // Handle click event for deployment link
+            onClick={() => openPage(project.deploy)} // Handle click event for deployment link
           />
           {/* Icon for project repository */}
           <FaGithub

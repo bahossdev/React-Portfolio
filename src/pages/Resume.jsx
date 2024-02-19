@@ -7,8 +7,8 @@ function Resume() {
     <>
 
       <div className="container">
-        <h2>Resume</h2>
-        <div>
+        <div className="container">
+        <h2 className="typewriter">Resume</h2>
           <ul className="card">
             <p><strong>Proficiency in:</strong></p>
             <li>HTML</li>

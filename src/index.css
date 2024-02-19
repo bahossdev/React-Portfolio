@@ -83,13 +83,14 @@ ul {
 
 /* Heading Styles */
 h1 {
-  font-size: 3.2em;
+  font-size: 4rem;
   line-height: 1.1;
   margin-left: 20px;
   margin-top: 20px;
   font-family: 'Permanent Marker', cursive;
   color: #cbedff;
   text-shadow: 2px 2px 5px #0a1537;
+  
 }
 
 h1:hover {
@@ -97,10 +98,6 @@ h1:hover {
   cursor: pointer;
 }
 
-/* Subheading Styles */
-h1 {
-  font-size: 4rem;
-}
 
 h2 {
   font-size: 2.7rem;
@@ -174,16 +171,18 @@ p {
 /* Label Styles */
 label {
   display: block;
+  font-size: 1.3rem;
   font-weight: 800;
   margin-top: 20px;
 }
 
 /* Error Styles */
 .error {
-font-style: italic;
-font-size: small;
-color:rgb(79, 78, 78);
-margin-bottom: 10px;
+  font-style: italic;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: rgb(187, 98, 189);
+  margin-bottom: 10px;
 }
 
 /* Input and Textarea Styles */
@@ -191,12 +190,13 @@ input,
 textarea {
   color: black;
   width: 100%;
+  font-size: 1.3rem;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
   background-color: #e4e9ef;
-  border: dashed 1px grey;
+  border: dashed 1px rgb(128, 128, 128);
 }
 
 /* Button Styles */
@@ -209,6 +209,7 @@ button {
   cursor: pointer;
   transition: background-color 0.3s;
   font-weight: bold;
+  font-size: 1.2rem;
 }
 
 button:hover {
@@ -217,7 +218,7 @@ button:hover {
 }
 
 button:disabled {
-  background-color: rgb(99, 109, 128);
+  background-color: rgb(132, 139, 152);
   cursor: not-allowed;
 }
 
@@ -288,7 +289,7 @@ footer {
 
 .icon-cover {
   position: absolute;
-  top: 570px;
+  top: 550px;
   right: 80px;
   font-size: 2rem;
   z-index: 1;
@@ -342,6 +343,45 @@ footer {
   max-width: 100%;
   height: auto;
   border-radius: 10px 10px 0 0;
+}
+
+.project-image:hover{
+  cursor: pointer;
+  box-shadow: inset 5px 5px 5px black;
+  background-color: black;
+  background-blend-mode: soft-light;
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: .1em solid rgb(165, 161, 155);
+  white-space: nowrap;
+  margin: 0 10px;
+  letter-spacing: .01em;
+  animation:
+    typing 2s steps(40, end),
+    blink-caret .1s step-end 0.75s forwards;;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0
+  }
+  to {
+    width: 100%
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent
+  }
+  50% {
+    border-color: rgb(245, 225, 189);
+  }
 }
 
 /* Dark Mode Media Query */

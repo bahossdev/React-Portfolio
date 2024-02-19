@@ -6,7 +6,7 @@ function AboutMe() {
         <div>
           <img src="./avatar.jpg" className="avatar" />
         </div>
-        <h2>About Me</h2>
+        <h2 className="typewriter">About Me</h2>
         <div className="card">
           <h3>Welcome to My Portfolio!</h3>
           <p>
