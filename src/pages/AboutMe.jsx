@@ -17,8 +17,7 @@ function AboutMe() {
           </p>
           <p>
             I have a keen eye for design and usability, coupled with strong
-            technical skills in HTML, CSS, Tailwind, JavaScript, React, MERN, Node.js, MongoDB, MySQL, and
-            more. I thrive in collaborative environments and am dedicated to
+            technical skills in HTML, CSS, Tailwind, JavaScript, React, MERN, Node.js, MongoDB, MySQL, AWS, and more. I thrive in collaborative environments and am dedicated to
             delivering high-quality solutions that meet client needs and exceed
             expectations.
             Let's work together to bring your ideas to life and create something

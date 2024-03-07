@@ -18,6 +18,7 @@ function Resume() {
             <li>React</li>
             <li>MERN</li>
             <li>Node.js</li>
+            <li>AWS</li>
             <li>MongoDB</li>
             <li>MySQL</li>
           </ul>
