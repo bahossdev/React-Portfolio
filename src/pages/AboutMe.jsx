@@ -4,7 +4,7 @@ function AboutMe() {
     <>
       <div className="container">
         <div>
-          <img src="./avatar.jpg" className="avatar" />
+          <img src="./profile.jpg" className="avatar" />
         </div>
         <h2 className="typewriter">About Me</h2>
         <div className="card">
