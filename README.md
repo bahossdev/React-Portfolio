@@ -62,7 +62,7 @@ Please refer to the license in the repository for detailed information on the li
 
 ## Deployment
 
-The application is deployed on Netlify. You can access it [here](https://main--aesthetic-strudel-7e37c2.netlify.app/).
+The application is deployed on Netlify. You can access it [here](https://bahoss-dev.netlify.app/).
 
 ## Repository
 
